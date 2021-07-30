@@ -8,7 +8,7 @@ export default function Archiving() {
                 <div className="archiving-container">
                     <div className="archiving-card">
                         <div className="archiving-img-wrapper">
-                            <img className="archiving-img" src="/img/archiving/git-hub.png" alt="github"/>
+                            <img className="archiving-img" src="img/archiving/git-hub.png" alt="github"/>
                         </div>
                         <div className="archiving-url">https://github.com/ybw903</div>
                         <div className="archiving-description">
@@ -21,7 +21,7 @@ export default function Archiving() {
                     </div>
                     <div className="archiving-card">
                         <div className="archiving-img-wrapper">
-                            <img className="archiving-img" src="/img/archiving/vel.png" alt="velog" />
+                            <img className="archiving-img" src="img/archiving/vel.png" alt="velog" />
                         </div>
                         <div className="archiving-url">https://velog.io/@ybw903</div>
                         <div className="archiving-description">

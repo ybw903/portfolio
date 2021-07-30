@@ -8,8 +8,11 @@ export default function Introduce() {
                     <br/>
                     Protfolio
                 </div>
+                <hr className="introduce-divider"></hr>
                 <div className="introuduce-description">
-                안녕하세요. 함께 성장하고 싶은 개발자 유병우입니다.
+                안녕하세요. 
+                <br/>
+                함께 성장하고 싶은 개발자 유병우입니다.
                 </div>
             
             </div>

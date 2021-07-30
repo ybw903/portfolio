@@ -5,10 +5,10 @@ type Skill = {
 
 export default function Skills() {
     const skills: Skill[]  = [
-        {skill_title: 'Front-end',tech_stck_img_url:'/img/skills/front-end.png'},
-        {skill_title: 'Back-end',tech_stck_img_url:'/img/skills/back-end.png'},
-        {skill_title: 'Deployment',tech_stck_img_url:"/img/skills/deployment.png"},
-        {skill_title: 'Version Control',tech_stck_img_url:'/img/skills/version-control.png'},
+        {skill_title: 'Front-end',tech_stck_img_url:'img/skills/front-end.png'},
+        {skill_title: 'Back-end',tech_stck_img_url:'img/skills/back-end.png'},
+        {skill_title: 'Deployment',tech_stck_img_url:"img/skills/deployment.png"},
+        {skill_title: 'Version Control',tech_stck_img_url:'img/skills/version-control.png'},
     ]
     return (
         <article className="skills">
