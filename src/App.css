@@ -197,7 +197,7 @@
   border-bottom-color: #cccccc;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  font-family: sans-serif;
+  font-family: Black Han Sans, sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.5;
@@ -508,6 +508,15 @@
   .projects-project {
     padding: 2rem;
   }
+
+  .projects-label {
+    display: table;
+    width: auto;
+    padding-left: .5rem;
+    margin-bottom: .25rem;
+    border-left: 5px solid #222;
+  }
+
   .aboutMe-info-wrapper {
     width: 100%;
   }
@@ -536,7 +545,7 @@
   }
 
   .skills-content {
-    height: 90rem;
+    height: 120rem;
   }
 }
 

@@ -1,7 +1,12 @@
-export default function Archiving() {
+interface props {
+    setItemsRef: (i:number, divRef: HTMLDivElement|null) => void
+}
+
+
+export default function Archiving({setItemsRef}:props) {
     return (
-        <article className="archiving">
-            <div className="archiving-content">
+        <article className="archiving" >
+            <div className="archiving-content"ref={(ref)=>setItemsRef(2,ref)}>
                 <div className="section-title">
                     <div className = "section-title-text" style={{color:'#ffffff',borderBottomColor:'#ffffff'}}>Archiving</div>
                 </div>

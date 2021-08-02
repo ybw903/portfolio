@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-export default function Header() {
+interface props {
+    handleScroll: (i: number) => void;
+}
+
+export default function Header({handleScroll}: props) {
 
     const [hasBackGroundColor, sethasBackgroundColor] = useState({
         backgroundColor: false
@@ -16,6 +20,10 @@ export default function Header() {
     const {mobileView} = state;
     const {backgroundColor} = hasBackGroundColor;
     const {isFold} = fold;
+    
+    const moveScroll= (i:number) => {
+        handleScroll(i);
+    }
 
     useEffect(()=>{
         const setResponsivness = () => {
@@ -38,7 +46,9 @@ export default function Header() {
     const hamburgerMenuHandler = () => {
         setFold((prevState) => ({...prevState, isFold: !isFold}));
     }
+
     const style = {color: '#453a33'};
+    
     return(
         <header className={backgroundColor||mobileView? "header header-has-background-color" : "header"}>
             <div className="header-content ">
@@ -52,10 +62,10 @@ export default function Header() {
                 )
                 : (
                     <div className="header-navigation-menu" style={backgroundColor?style:{}}>
-                        <div className="header-navigation-item" style={backgroundColor?style:{}}>About me</div>
-                        <div className="header-navigation-item" style={backgroundColor?style:{}}>Skills</div>
-                        <div className="header-navigation-item" style={backgroundColor?style:{}}>Archiving</div>
-                        <div className="header-navigation-item" style={backgroundColor?style:{}}>Projects</div>
+                        <div className="header-navigation-item" style={backgroundColor?style:{}} onClick={()=>moveScroll(0)}>About me</div>
+                        <div className="header-navigation-item" style={backgroundColor?style:{}} onClick={()=>moveScroll(1)}>Skills</div>
+                        <div className="header-navigation-item" style={backgroundColor?style:{}} onClick={()=>moveScroll(2)}>Archiving</div>
+                        <div className="header-navigation-item" style={backgroundColor?style:{}} onClick={()=>moveScroll(3)}>Projects</div>
                     </div>
 
                 )
@@ -64,10 +74,10 @@ export default function Header() {
             {mobileView
             ?(
                 <div className={isFold? "header-folded-navigation-menus header_is_folded":"header-folded-navigation-menus"} >
-                    <div className="header-folded-navigation-menu">About me</div>
-                    <div className="header-folded-navigation-menu">Skills</div>
-                    <div className="header-folded-navigation-menu">Archiving</div>
-                    <div className="header-folded-navigation-menu">Projects</div>
+                    <div className="header-folded-navigation-menu" onClick={()=>moveScroll(0)}>About me</div>
+                    <div className="header-folded-navigation-menu" onClick={()=>moveScroll(1)}>Skills</div>
+                    <div className="header-folded-navigation-menu" onClick={()=>moveScroll(2)}>Archiving</div>
+                    <div className="header-folded-navigation-menu" onClick={()=>moveScroll(3)}>Projects</div>
                 </div>
             )
             :('')
