@@ -11,7 +11,7 @@ export default function Archiving({setItemsRef}:props) {
                     <div className = "section-title-text" style={{color:'#ffffff',borderBottomColor:'#ffffff'}}>Archiving</div>
                 </div>
                 <div className="archiving-container">
-                    <div className="archiving-card">
+                    <div className="archiving-card" onClick={()=>window.open("https://github.com/ybw903")}>
                         <div className="archiving-img-wrapper">
                             <img className="archiving-img" src="img/archiving/git-hub.png" alt="github"/>
                         </div>
@@ -20,11 +20,11 @@ export default function Archiving({setItemsRef}:props) {
                             <p>소스 코드 저장소</p>
                             <ul>
                                 <li>학습하며 배웠던 내용의 소스 코드.</li>
-                                <li>토이 프로젝트 및 학부 시절 진행했던 프로젝트의 소스크드</li>
+                                <li>토이 프로젝트 및 학부 시절 진행했던 프로젝트의 소스코드</li>
                             </ul>
                         </div>
                     </div>
-                    <div className="archiving-card">
+                    <div className="archiving-card" onClick={()=>window.open("https://velog.io/@ybw903")}>
                         <div className="archiving-img-wrapper">
                             <img className="archiving-img" src="img/archiving/vel.png" alt="velog" />
                         </div>

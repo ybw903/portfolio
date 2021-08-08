@@ -28,7 +28,7 @@ export default function Projects({setItemsRef}:props) {
                             <div className="projects-description">
                                 <div className="projects-label">GitHub</div>
                                 <div className="projects-value">
-                                    <div className="projects-url">https://github.com/ybw903/SpringBoardApplication</div>
+                                    <div className="projects-url" onClick={()=>window.open("https://github.com/ybw903/SpringBoardApplication")}>https://github.com/ybw903/SpringBoardApplication</div>
                                 </div>
                             </div>
                             <div className="projects-description">
@@ -68,7 +68,7 @@ export default function Projects({setItemsRef}:props) {
                             <div className="projects-description">
                                 <div className="projects-label">GitHub</div>
                                 <div className="projects-value">
-                                    <div className="projects-url">https://github.com/ybw903/Capstone-Application</div>
+                                    <div className="projects-url" onClick={()=>window.open("https://github.com/ybw903/Capstone-Application")}>https://github.com/ybw903/Capstone-Application</div>
                                 </div>
                             </div>
                             <div className="projects-description">
