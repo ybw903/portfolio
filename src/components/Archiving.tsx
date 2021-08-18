@@ -1,3 +1,5 @@
+import {moveDown,moveUp} from '../utils/onMouseDetail'
+
 interface props {
     setItemsRef: (i:number, divRef: HTMLDivElement|null) => void
 }
@@ -11,7 +13,7 @@ export default function Archiving({setItemsRef}:props) {
                     <div className = "section-title-text" style={{color:'#ffffff',borderBottomColor:'#ffffff'}}>Archiving</div>
                 </div>
                 <div className="archiving-container">
-                    <div className="archiving-card" onClick={()=>window.open("https://github.com/ybw903")}>
+                    <div className="archiving-card" onClick={()=>window.open("https://github.com/ybw903")} onMouseEnter={moveDown} onMouseLeave={moveUp}>
                         <div className="archiving-img-wrapper">
                             <img className="archiving-img" src="img/archiving/git-hub.png" alt="github"/>
                         </div>
@@ -24,7 +26,7 @@ export default function Archiving({setItemsRef}:props) {
                             </ul>
                         </div>
                     </div>
-                    <div className="archiving-card" onClick={()=>window.open("https://velog.io/@ybw903")}>
+                    <div className="archiving-card" onClick={()=>window.open("https://velog.io/@ybw903")} onMouseEnter={moveDown} onMouseLeave={moveUp}>
                         <div className="archiving-img-wrapper">
                             <img className="archiving-img" src="img/archiving/vel.png" alt="velog" />
                         </div>
